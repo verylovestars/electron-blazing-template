@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "jsx": "react-jsx",
+    "types": ["vite/client", "react", "react-dom"]
+  },
+  "include": [
+    "src/renderer/**/*",
+    "panda.config.ts",
+    "vite.renderer.config.mts",
+    "src/renderer/shared/styled-system/**/*"
+  ],
+  "exclude": ["node_modules", "dist", ".vite", ".output"]
+}
+

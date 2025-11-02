@@ -1,0 +1,70 @@
+{
+  "name": "blazing-electron-template",
+  "productName": "blazing-electron-template",
+  "version": "1.0.0",
+  "description": "Blazing Electron Template",
+  "main": ".vite/build/main.js",
+  "type": "module",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "eslint --ext .ts,.tsx .",
+    "prepare": "panda codegen"
+  },
+  "keywords": [],
+  "author": {
+    "name": "lovestars",
+    "email": "meowgene@duck.com"
+  },
+  "license": "MIT",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@swc/core",
+      "electron",
+      "electron-winstaller",
+      "esbuild",
+      "unrs-resolver"
+    ]
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^7.10.2",
+    "@electron-forge/maker-deb": "^7.10.2",
+    "@electron-forge/maker-rpm": "^7.10.2",
+    "@electron-forge/maker-squirrel": "^7.10.2",
+    "@electron-forge/maker-zip": "^7.10.2",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.10.2",
+    "@electron-forge/plugin-fuses": "^7.10.2",
+    "@electron-forge/plugin-vite": "^7.10.2",
+    "@electron/fuses": "^1.0.0",
+    "@pandacss/dev": "^1.4.3",
+    "@types/electron-squirrel-startup": "^1.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "electron": "39.0.0",
+    "eslint": "^8.0.1",
+    "eslint-import-resolver-typescript": "^4.4.4",
+    "eslint-plugin-import": "^2.25.0",
+    "postcss": "^8.5.6",
+    "typescript": "^5.9.3",
+    "vite": "7.1.10",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react-swc": "^4.2.0",
+    "autoprefixer": "^10.4.21",
+    "vite-tsconfig-paths": "^5.1.4"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.1",
+    "mobx": "^6.15.0",
+    "mobx-react-lite": "^4.1.1",
+    "mobx-react-routing": "^7.2.0",
+    "mobx-view-model": "^8.6.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.9.5",
+    "reflect-metadata": "^0.2.2",
+    "tsyringe": "^4.8.0"
+  }
+}
